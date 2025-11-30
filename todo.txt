@@ -1,0 +1,4 @@
+read const-correctness
+Parallelize matrix class and generics
+Function objects vs function pointers. Former can save state
+Learn about emplace functions
