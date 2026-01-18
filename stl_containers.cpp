@@ -1,5 +1,6 @@
 #include "include.h"
 #include <array>
+#include <queue>
 #include <deque>
 #include <list>
 #include <forward_list>
@@ -57,6 +58,26 @@ void Vector(){
     // access underlying buffer vec.data();
 }
 
+void Queue(){
+    // A queue is a container adapter that stores elements in FIFO (First In, First Out) order.
+    std::queue<int> que;
+    que.push(5); // enqueue, pushes to the back of the que
+    que.push(10);
+
+    que.pop(); // // Deleting elements from the front of the queue
+
+    println(que.front()); // access front element
+    println(que.back()); // access back element
+
+    println("Size of queue: ", que.size());
+
+    while(!que.empty())
+    {
+        println("Queue is not empty. Front element: ", que.front());
+        que.pop();
+    }
+
+}
 void Deque(){
     // Double ended queue
     // efficient for addition/removal at BOTH ends
